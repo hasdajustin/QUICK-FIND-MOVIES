@@ -1,5 +1,6 @@
-from django.shortcuts import render, HttpResponse
-import json
+from django.shortcuts import render
+# from django.http import HttpResponse
+# import json
 from .models import Movie
 
 # Create your views here.
@@ -30,5 +31,6 @@ def movie_list(request):
         'selected_year': year,
         'selected_country': country,
     }
-    context_str = json.dumps(context, default=str)
-    return HttpResponse(context_str, content_type='application/json')
+    # context_str = json.dumps(context, default=str)
+    # return HttpResponse(context_str, content_type='application/json')
+    return render(request, 'core/movie_list.html', context)
