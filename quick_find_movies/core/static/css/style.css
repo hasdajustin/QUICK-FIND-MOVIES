@@ -1,0 +1,16 @@
+:root{
+    --main-bg: radial-gradient(circle, #008285 0%, #000000 100%);
+    --primary-bg: #000000;
+    --main-text: #ffff;
+}
+.mainContainer{
+    background: var(--main-bg);
+    color: var(--main-text);
+}
+
+.mainForm{
+    background:var(--main-bg);
+    color: var(--main-text);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.3px);
+}
