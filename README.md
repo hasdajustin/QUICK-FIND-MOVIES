@@ -33,7 +33,6 @@ Follow these steps to run the project locally:
     ```bash
     git clone https://github.com/hasdajustin/quick_find_movies.git
     cd quick_find_movies
-    ```
 
 **Create a virtual environment (optional but recommended):**
 
@@ -41,24 +40,21 @@ Follow these steps to run the project locally:
     python -m venv env
     venv\Scripts\activate       # For Windows
     # source venv/bin/activate  # For macOS/Linux
-    ```
+    
 **Install dependencies:**
 
     ```bash
     pip install -r requirements.txt
-    ```
 
 **Run database migrations:**
 
     ```bash
     python manage.py migrate
-    ```
 
 **Start the development server:**
 
     ```bash
     python manage.py runserver
-    ```
 
 **Access the site:**
 
@@ -91,10 +87,8 @@ Follow these steps to run the project locally:
 
     ```bash
     python manage.py flush
-    ```
 
 **Import the Movies**
 
     ```bash
     python manage.py import_movies
-    ```
